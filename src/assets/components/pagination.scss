@@ -1,0 +1,26 @@
+.pagination {
+  &__list {
+    @apply flex items-center gap-1 text-indigo-300;
+  
+    &__first {
+      @apply w-9 h-9  flex items-center justify-center  disabled:opacity-50 rounded;
+    }
+    &__prev  {
+      @apply w-9 h-9  flex items-center justify-center mr-4  disabled:opacity-50 rounded;
+    }
+    &__item  {
+      @apply  w-9 h-9 border rounded  data-[selected]:bg-indigo-600 data-[selected]:text-white hover:bg-white/10 transition;
+    }
+    &__ellipsis {
+      @apply w-9 h-9 flex items-center justify-center;
+    }
+  
+    &__next  {
+      @apply w-9 h-9  flex items-center justify-center  ml-4 disabled:opacity-50 rounded;
+    }
+    &__last  {
+      @apply w-9 h-9  flex items-center justify-center disabled:opacity-50 rounded;
+    }
+  }
+}
+
