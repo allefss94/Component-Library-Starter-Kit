@@ -1,5 +1,5 @@
 {
-  "name": "@allefs/vue-radix-ts-tailwind-storybook",
+  "name": "@allefss94/vue-radix-ts-tailwind-storybook",
   "private": true,
   "version": "1.0.0",
   "description": "Component Library Start kit make with Vue3, RadixVue, TailwindCSS, Storybook, Sass and Iconify/Vue",
@@ -53,5 +53,8 @@
   "repository": {
     "type": "git",
     "url": "https://github.com/allefss94/Component-Library-Starter-Kit"
+  },
+  "publishConfig": {
+    "@allefss94:registry": "https://npm.pkg.github.com"
   }
 }
