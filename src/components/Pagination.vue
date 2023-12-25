@@ -5,6 +5,7 @@ import { computed, defineModel as localDefineModel } from 'vue';
 
 interface Props {
   total: number
+  itemsPerPage: number
   defaultPage?: number
   showEdges?:boolean
   siblingCount?: number
@@ -12,21 +13,21 @@ interface Props {
 
 const props = withDefaults(defineProps<Props>(), {
   total:1,
+  itemsPerPage: 1,
   defaultPage: 1,
   siblingCount: 1,
-  showEdges: true
 })
 
 const page = localDefineModel<number>('page')
-const computedTotal = computed(() => props.total * 10)
+
 
 </script>
 
 <template>
   
-  <PaginationRoot class="pagination" v-model:page="page" :total="computedTotal" :sibling-count="siblingCount" show-edges  :default-page="defaultPage">
+  <PaginationRoot class="pagination" v-model:page="page" :items-per-page="itemsPerPage" :total="total" :sibling-count="siblingCount" :show-edges="showEdges"  :default-page="defaultPage">
     <PaginationList v-slot="{ items }" class="pagination__list">
-      <PaginationFirst class="pagination__list____first">
+      <PaginationFirst class="pagination__list__first">
         <slot name="fist-page-icon">
           <Icon icon="radix-icons:double-arrow-left" />
         </slot>

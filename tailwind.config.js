@@ -138,7 +138,17 @@ export default {
       black: colors.black,
       white: colors.white,
       slate: colors.slate,
-      gray: colors.gray,
+      gray: {
+        100: '#F8F9FA',
+        200: '#F1F3F5',
+        300: '#E9ECEF',
+        400: '#CED4DA',
+        500: '#ADB5BD',
+        600: '#868E96',
+        700: '#495057',
+        800: '#262B30',
+        900: '#16191D',
+      },
       zinc: colors.zinc,
       neutral: colors.neutral,
       stone: colors.stone,
@@ -159,6 +169,28 @@ export default {
       fuchsia: colors.fuchsia,
       pink: colors.pink,
       rose: colors.rose,
+      brand: {
+        'gray': '#484850',
+        'ghost': '#F2F4F9',
+        'primary': {
+          pure: "#3B689F",
+          1: "#819EC1",
+          2: "#6186B2",
+          3: "#4F78A9",
+        },
+        'secondary': {
+          pure: "#1C3141",
+          1: "#3E5B72",
+          2: "#314E64",
+          3: "#264155",
+        },
+        'tertiary': {
+          pure: "#854646",
+          1: "#CEB5B5",
+          2: "#B69090",
+          3: "#9D6B6B",
+        }
+      }
     }),
     columns: {
       auto: 'auto',
